@@ -1,4 +1,4 @@
-import { serve } from '@hono/node-server/.'
+import { serve } from '@hono/node-server'
 import { Hono } from 'hono'
 import { logger } from 'hono/logger'
 import { ZodiosHonoHandler } from '../handler/zodios_hono_handler'
@@ -29,6 +29,8 @@ export class App {
         return c.json({ error: (e as Error).message }, 500)
       }
     })
+
+    return this.applyRoutes(app)
   }
 
   static applyRoutes(app: Hono) {

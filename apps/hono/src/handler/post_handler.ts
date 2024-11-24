@@ -9,7 +9,7 @@ import * as v from 'valibot'
 export class PostHandler {
   static apply(app: Hono) {
     return app
-      .post('/posts', vValidator('json', postSchema), async (c) => {
+      .post('/posts', vValidator('json', v.pick(postSchema, ['post'])), async (c) => {
         const valid = c.req.valid('json')
         const req = valid.post
         await PostService.postPosts(req)
