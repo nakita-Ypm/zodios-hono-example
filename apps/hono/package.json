@@ -1,0 +1,22 @@
+{
+  "name": "@apps/hono",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.ts"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.13.7",
+    "@hono/valibot-validator": "^0.5.1",
+    "@packages/-zod-client": "workspace:*",
+    "@packages/domain": "workspace:*",
+    "@packages/prisma": "workspace:*",
+    "@packages/schema": "workspace:*",
+    "@packages/service": "workspace:*",
+    "hono": "^4.6.11",
+    "valibot": "1.0.0-beta.8"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.17",
+    "tsx": "^4.7.1"
+  }
+}

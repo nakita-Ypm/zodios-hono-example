@@ -1,0 +1,8 @@
+.pnpm-store
+node_modules
+pnpm-lock.yaml
+dev.db
+dev.db-journal
+.env
+migrations
+schemas

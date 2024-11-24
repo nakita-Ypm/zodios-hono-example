@@ -1,0 +1,9 @@
+{
+  "name": "@packages/schema",
+  "private": true,
+  "main": "src/index.ts",
+  "type": "module",
+  "dependencies": {
+    "valibot": "1.0.0-beta.8"
+  }
+}
