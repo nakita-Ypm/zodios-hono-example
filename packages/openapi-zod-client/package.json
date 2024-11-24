@@ -1,0 +1,15 @@
+{
+  "name": "@packages/-zod-client",
+  "private": true,
+  "main": "src/index.ts",
+  "scripts": {
+    "generate": "pnpx openapi-zod-client openapi/openapi.yaml -o src/index.ts"
+  },
+  "dependencies": {
+    "@zodios/core": "^10.9.6",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "openapi-zod-client": "^1.18.2"
+  }
+}
