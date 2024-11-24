@@ -15,6 +15,7 @@ describe('Zodios Hono🔥 Test', () => {
 
   it('Hono API', async () => {
     const input = await testClient.get()
+    
     expect(input).toEqual({
       message: 'Zodios Hono🔥',
     })
@@ -25,7 +26,6 @@ describe('Zodios Hono🔥 Test', () => {
       post: 'Zodios Hono🔥',
     })
 
-    console.log(input)
     expect(input).toEqual({ message: 'Created' })
   })
 
@@ -86,6 +86,7 @@ describe('Zodios Hono🔥 Test', () => {
         id: post.id,
       },
     })
+
     expect(updatedPost?.post).toEqual('Zodios Hono🔥🔥🔥 Update')
   })
 
