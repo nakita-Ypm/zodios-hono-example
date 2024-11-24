@@ -6,7 +6,13 @@
   },
   "dependencies": {
     "@hono/node-server": "^1.13.7",
-    "hono": "^4.6.11"
+    "@hono/valibot-validator": "^0.5.1",
+    "@packages/domain": "workspace:*",
+    "@packages/prisma": "workspace:*",
+    "@packages/schema": "workspace:*",
+    "@packages/service": "workspace:*",
+    "hono": "^4.6.11",
+    "valibot": "1.0.0-beta.8"
   },
   "devDependencies": {
     "@types/node": "^20.11.17",

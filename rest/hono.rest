@@ -9,7 +9,7 @@ Content-Type: application/json
 Accept: application/json
 
 {
-    "post": "Zodios Hhono Example🔥"
+    "post": "Zodios Hono🔥"
 }
 
 ### getPosts 5
