@@ -22,7 +22,7 @@ const endpoints = makeApi([
         schema: z.object({ post: z.string().min(1).max(140) }).passthrough(),
       },
     ],
-    response: z.void(),
+    response: z.object({ message: z.string() }).passthrough(),
     errors: [
       {
         status: 400,

@@ -1,9 +1,9 @@
 import type { Hono } from 'hono'
 import { vValidator } from '@hono/valibot-validator'
+import { Post } from '@packages/prisma'
 import { PostService } from '@packages/service'
 import { PostDomain } from '@packages/domain'
 import { postSchema } from '@packages/schema'
-import { Post } from '@packages/prisma'
 import * as v from 'valibot'
 
 export class PostHandler {
